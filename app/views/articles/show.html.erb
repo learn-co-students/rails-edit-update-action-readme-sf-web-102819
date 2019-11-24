@@ -1,2 +1,4 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.description %></p>
+<p><%= link_to "Edit this post", edit_article_path(@article)%></p>
+<p><%= link_to "View all posts", root_path %></p>
