@@ -9,7 +9,7 @@ describe 'navigate' do
     visit "/articles/#{@article.id}"
     expect(page).to have_css("h1", text: "My Article")
   end
-
+ 
   it 'to article pages' do
     visit "/articles/#{@article.id}"
     expect(page.status_code).to eq(200)
